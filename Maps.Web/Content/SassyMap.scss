@@ -1,0 +1,64 @@
+﻿$baseClr: #252124;
+$accentClr: #2bb196;
+$dimClr: #1f282d;
+$lightBckgrnd: #eaedf1;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url("/Images/bokeh-336605.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.content {
+    min-height: 100%;
+    background-color: $lightBckgrnd;
+}
+
+nav {
+    background-color: $baseClr;
+
+    h3 {
+        color: $lightBckgrnd;
+    }
+}
+
+.profile {
+    background-color: $accentClr;
+    height: 225px;
+}
+
+.controls {
+    padding: 0;
+
+    div {
+        padding: 0;
+        
+        .box {
+            background-color: indianred;
+            height: 75px;
+            border: 1px solid white;
+        }
+
+    }
+
+    .nameLocation {
+        text-align: center;
+    }
+}
+
+.graphics {
+    padding: 0;
+
+    .map {
+        background-color: $accentClr;
+        height: 275px;
+    }
+
+    .events {
+        background-color: $dimClr;
+        height: 500px;
+    }
+}
