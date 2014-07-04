@@ -32,7 +32,6 @@ nav {
 .graphics {
   padding: 0; }
   .graphics .map {
-    background-color: #2bb196;
     height: 275px; }
   .graphics .events {
     background-color: #1f282d;

@@ -3,6 +3,7 @@
 
     $scope.processItem = function () {
         var arrayOfWords = $scope.todoItem.split(" ");
+        var result;
 
         $.each(arrayOfWords, function (index, value) {
             var potentialCity;
@@ -21,19 +22,22 @@
 
                         if (IData.Cities.indexOf(potentialCity) !== -1)
                         {
-                            console.log(potentialCity);
+                            result = potentialCity;
                         }
                     }
                 }
 
                 if (IData.Cities.indexOf(value) !== -1) {
 
-                    console.log(arrayOfWords[index]);
+                    result = arrayOfWords[index];
                 }
 
             }
 
         });
 
+        console.log(result);
     }
+
+    //var map = L.map('map').setView([51.505, -0.09], 13);
 });
